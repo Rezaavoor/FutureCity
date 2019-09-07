@@ -1,0 +1,294 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+html, body 	
+{
+	background-color: #EFEFEF;	
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	font-family: Raleway;
+}
+header{
+	background-color:gray;
+}
+.clear {
+    clear: both;
+}
+#logo_header{
+	
+	position: relative;
+	top:0em;
+	width: 100%;
+	height: 8em;
+	float: left;
+	text-align: center;
+	transition: all 0.3s;
+	margin-bottom: 10px;
+}
+
+.logo_img{
+	height: 100%;
+	cursor: pointer;
+}
+#nav_bar{
+	width: 100%;
+	transition: all 0.8s;
+}
+
+
+.Navbar {
+	height: 50px;
+	display: flex;
+	margin: 0 auto;
+	padding: 1em 3em;
+	text-align: center;
+	background: #EFEFEF;
+	transition: all 1s;
+	position: relative;
+	z-index: 999;
+}
+#menu_logo {
+	height: 30px;
+	float: left;
+	transition: all 0.3s;
+}
+#menu_logo img{
+	height: 100%;
+}
+.Navbar a {
+	display: inline-block;
+	color: #435765;
+    text-decoration: none;
+    font: 14px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+/* Pull up  */
+.Navbar a:not(.Navbar__Link-brand):before
+{
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	left: 0px;
+	bottom: 15px;
+	content: '';
+	background: #435765;
+	opacity: 0.3;
+	transition: all 0.3s;
+}
+.Navbar__Items--right a::before{
+	display: none;
+}
+#social_media_icon:hover{
+	height: 120%;
+}
+.Navbar a:not(.Navbar__Link-brand):hover:before
+{
+	height: 70%;
+}
+#social_media_icon{
+	transition: all 0.2s;
+	height: 30px;
+}
+.Navbar__Items {
+display: flex;
+}
+.Navbar__Items--right {
+margin-left:auto;
+}
+.Navbar__Link-toggle {
+display: none;
+}
+@media only screen and (max-width: 767px) {
+.Navbar__Link-brand{
+	background: url(../bild/nacka_logo4.svg);
+}
+#logo_header{
+	height: 6em;
+	}
+.Navbar__Items,
+.Navbar{
+	height: auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.Navbar__Items {
+	display:none;
+}
+.Navbar__Items--right {
+	margin-left:0;
+}
+.Navbar__ToggleShow {
+	display: flex;
+}
+.Navbar__Link-toggle {
+	align-self: flex-end;
+	display: initial;
+	position: absolute;
+	cursor: pointer;
+	margin-left: 50Ipx;
+	}
+.Navbar a:not(.Navbar__Link-brand):before
+{
+	bottom: 0px;
+}
+.Navbar a:not(.Navbar__Link-brand):hover:before
+{
+	height: 100%;
+}
+#social_media_icon:hover{
+	height: 101%;
+}
+}
+
+
+
+
+
+#main-div{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	text-align: center;
+}
+.item1 { grid-area: picture1;background: url('../bild/Projekt_bilder/mer_projekt_bilder/1.jpg');}
+.item2 { grid-area: picture2;background: url('../bild/Projekt_bilder/mer_projekt_bilder/2.jpg');}
+.item3 { grid-area: picture3;background: url('../bild/Projekt_bilder/mer_projekt_bilder/3.jpg');}
+.item4 { grid-area: picture4;background: url('../bild/Projekt_bilder/mer_projekt_bilder/4.jpg');}
+.item5 { grid-area: picture5;background: url('../bild/Projekt_bilder/mer_projekt_bilder/5.jpg');}
+.item6 { grid-area: picture6;background: url('../bild/Projekt_bilder/mer_projekt_bilder/6.jpg');}
+.item7 { grid-area: picture7;background: url('../bild/Projekt_bilder/mer_projekt_bilder/7.jpg');}
+.item8 { grid-area: picture8;background: url('../bild/Projekt_bilder/mer_projekt_bilder/8.jpg');}
+.item9 { grid-area: picture9;background: url('../bild/Projekt_bilder/mer_projekt_bilder/9.jpg');}
+.item10 { grid-area: picture10;background: url('../bild/Projekt_bilder/mer_projekt_bilder/10.jpg');}
+.item11 { grid-area: picture11;background: url('../bild/Projekt_bilder/mer_projekt_bilder/11.jpg');}
+.item12 { grid-area: picture12;background: url('../bild/Projekt_bilder/mer_projekt_bilder/12.jpg');}
+.item13 { grid-area: picture13;background: url('../bild/Projekt_bilder/mer_projekt_bilder/13.jpg');}
+.item14 { grid-area: picture14;background: url('../bild/Projekt_bilder/mer_projekt_bilder/14.jpg');}
+.item15 { grid-area: picture15;background: url('../bild/Projekt_bilder/mer_projekt_bilder/15.jpg');}
+.item16 { grid-area: picture16;background: url('../bild/Projekt_bilder/mer_projekt_bilder/16.jpg');}
+.item17 { grid-area: picture17;background: url('../bild/Projekt_bilder/mer_projekt_bilder/17.jpg');}
+.item18 { grid-area: picture18;background: url('../bild/Projekt_bilder/mer_projekt_bilder/18.jpg');}
+.item19 { grid-area: picture19;background: url('../bild/Projekt_bilder/mer_projekt_bilder/19.jpg');}
+.item20 { grid-area: picture20;background: url('../bild/Projekt_bilder/mer_projekt_bilder/20.jpg');}
+.item21 { grid-area: picture21;background: url('../bild/Projekt_bilder/mer_projekt_bilder/21.jpg');}
+.item22 { grid-area: picture22;background: url('../bild/Projekt_bilder/mer_projekt_bilder/22.jpg');}
+.item23 { grid-area: picture23;background: url('../bild/Projekt_bilder/mer_projekt_bilder/23.jpg');}
+.item24 { grid-area: picture24;background: url('../bild/Projekt_bilder/mer_projekt_bilder/24.jpg');}
+.item25 { grid-area: picture25;background: url('../bild/Projekt_bilder/mer_projekt_bilder/25.jpg');}
+.item26 { grid-area: picture26;background: url('../bild/Projekt_bilder/mer_projekt_bilder/26.jpg');}
+.item27 { grid-area: picture27;background: url('../bild/Projekt_bilder/mer_projekt_bilder/27.jpg');}
+.item28 { grid-area: picture28;background: url('../bild/Projekt_bilder/mer_projekt_bilder/28.jpg');}
+.item29 { grid-area: picture29;background: url('../bild/Projekt_bilder/mer_projekt_bilder/29.jpg');}
+.item30 { grid-area: picture30;background: url('../bild/Projekt_bilder/mer_projekt_bilder/30.jpg');}
+.item31 { grid-area: picture31;background: url('../bild/Projekt_bilder/mer_projekt_bilder/31.jpg');}
+.item32 { grid-area: picture32;background: url('../bild/Projekt_bilder/mer_projekt_bilder/32.jpg');}
+.item33 { grid-area: picture33;background: url('../bild/Projekt_bilder/mer_projekt_bilder/33.jpg');}
+.item34 { grid-area: picture34;background: url('../bild/Projekt_bilder/mer_projekt_bilder/34.jpg');}
+.item35 { grid-area: picture35;background: url('../bild/Projekt_bilder/mer_projekt_bilder/35.jpg');}
+.item36 { grid-area: picture36;background: url('../bild/Projekt_bilder/mer_projekt_bilder/36.jpg');}
+.item37 { grid-area: picture37;background: url('../bild/Projekt_bilder/mer_projekt_bilder/37.jpg');}
+.item38 { grid-area: picture38;background: url('../bild/Projekt_bilder/mer_projekt_bilder/38.jpg');}
+.item39 { grid-area: picture39;background: url('../bild/Projekt_bilder/mer_projekt_bilder/39.jpg');}
+.item40 { grid-area: picture40;background: url('../bild/Projekt_bilder/mer_projekt_bilder/40.jpg');}
+.item41 { grid-area: picture41;background: url('../bild/Projekt_bilder/mer_projekt_bilder/41.jpg');}
+.item42 { grid-area: picture42;background: url('../bild/Projekt_bilder/mer_projekt_bilder/42.jpg');}
+.item43 { grid-area: picture43;background: url('../bild/Projekt_bilder/mer_projekt_bilder/43.jpg');}
+.item44 { grid-area: picture44;background: url('../bild/Projekt_bilder/mer_projekt_bilder/44.jpg');}
+
+.grid-container {
+	margin-top: 20px;
+	border-radius: 2%;
+    display: grid;
+    grid-template-areas:
+      'picture1 picture2 picture3'
+	  'picture4 picture5 picture6'
+	  'picture7 picture8 picture9'
+	  'picture10 picture11 picture12'
+	  'picture13 picture14 picture15'
+	  'picture16 picture17 picture18'
+	  'picture19 picture20 picture21'
+	  'picture22 picture23 picture24'
+	  'picture25 picture26 picture27'
+	  'picture28 picture29 picture30'
+	  'picture31 picture32 picture33'
+	  'picture34 picture35 picture36'
+	  'picture37 picture38 picture39'
+	  'picture40 picture41 picture42'
+	  'picture43 picture44 picture45';
+    grid-gap: 10px;
+	padding: 10px;
+	height: 800vh;
+}
+
+.grid-container > div {
+    background-color: #C1E5E5;
+    text-align: center;
+    padding: 20px 0;
+	font-size: 20px;
+	transition: all 0.3s;
+}
+.grid-container > div:hover{
+	margin: 10px;
+	
+}
+@media only screen and (max-width: 767px) {
+	.grid-container {
+		margin-top: 20px;
+		border-radius: 2%;
+		display: grid;
+		grid-template-areas:
+		'picture1' 'picture2' 'picture3'
+		'picture4' 'picture5' 'picture6'
+		'picture7' 'picture8' 'picture9'
+		'picture10' 'picture11' 'picture12'
+		'picture13' 'picture14' 'picture15'
+		'picture16' 'picture17' 'picture18'
+		'picture19' 'picture20' 'picture21'
+		'picture22' 'picture23' 'picture24'
+		'picture25' 'picture26' 'picture27'
+		'picture28' 'picture29' 'picture30'
+		'picture31' 'picture32' 'picture33'
+		'picture34' 'picture35' 'picture36'
+		'picture37' 'picture38' 'picture39'
+		'picture40' 'picture41' 'picture42'
+		'picture43' 'picture44';
+		grid-gap: 10px;
+		padding: 10px;
+		height: 3000vh;
+	}
+	
+	.grid-container > div {
+		background-color: #C1E5E5;
+		text-align: center;
+		padding: 20px 0;
+		font-size: 20px;
+		transition: all 0.3s;
+	}
+	.grid-container > div:hover{
+		margin: none;
+		
+	}
+
+}
+
+footer{
+	background-color:#C1E5E5;
+	color:black;
+	height: 60vh;
+	text-align:center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#reza{
+	border: 2px black solid;
+	width:70%;
+}
